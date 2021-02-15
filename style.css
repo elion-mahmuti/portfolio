@@ -1,0 +1,594 @@
+@font-face {
+  font-family: "r";
+  src: url(/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: "rb";
+  src: url(/Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: "rbt";
+  src: url(/Roboto-Thin.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "r";
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+span,
+h1,
+p {
+  font-family: "r";
+  color: #000;
+}
+
+.content {
+  width: 100% !important;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  z-index: 2;
+  width: 100%;
+  border-bottom: 1px solid #000;
+  display: flex;
+  height: 40px;
+}
+
+.about-box {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 30px;
+}
+
+.about {
+  width: 20px;
+}
+
+.about-elion {
+  font-size: 18px;
+}
+
+.header-box {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  font-family: "rb";
+  font-size: 18px;
+}
+
+.logo-box {
+  padding-left: 30px;
+}
+
+.login-text {
+  font-size: 1em;
+}
+
+nav {
+  display: flex;
+  flex: 7;
+}
+
+.header-block {
+  margin-top: 40px;
+  border-bottom: 1px solid #000;
+}
+
+nav:not(:last-child) > * {
+  border-bottom: 1px solid #000;
+}
+nav > * {
+  text-align: center;
+}
+
+/* // -------------------------------------------------- */
+
+.copywriter-box {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #000;
+  text-decoration: none;
+  position: relative;
+  background: url(/copywriter.jpg);
+  background-size: cover;
+}
+
+.copywriter-cover {
+  position: absolute;
+}
+
+.copywriter {
+  color: #fff;
+  font-size: 2em;
+}
+
+.web-developer-box {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #000;
+  text-decoration: none;
+  background: url(/web-developer.jpg);
+  background-size: cover;
+}
+
+.web-developer {
+  color: #fff;
+  font-size: 2em;
+}
+
+.web-designer-box {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #000;
+  text-decoration: none;
+  background: url(/web-designer.jpg);
+  background-size: cover;
+}
+
+.web-designer {
+  color: #fff;
+  font-size: 2em;
+}
+
+.photo-editor-box {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background: url(/photo-editor.jpg);
+  background-size: cover;
+}
+
+.photo-editor {
+  color: #fff;
+  font-size: 2em;
+}
+.video-editor-box {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #000;
+  text-decoration: none;
+  background: url(/video-editor.png);
+  background-size: cover;
+}
+
+.video-editor {
+  color: #fff;
+  font-size: 2em;
+}
+.music-producer-box {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background: url(/music-producer.jpg);
+  background-size: cover;
+}
+
+.music-producer {
+  color: #fff;
+  font-size: 2em;
+}
+
+@media only screen and (max-width: 630px) {
+  nav {
+    display: flex;
+    flex-flow: row wrap;
+    font-size: 10px;
+  }
+  nav > * {
+    width: 100% !important;
+    border-bottom: 1px solid #000;
+    border-right: 0px solid #000 !important;
+  }
+  .logo {
+    width: 45%;
+  }
+
+  .copywriter-box {
+    border-right: 1px solid #000 !important;
+  }
+
+  .video-editor-box {
+    border-right: 1px solid #000 !important;
+  }
+}
+
+@media only screen and (max-width: 1070px) {
+  nav {
+    flex-flow: row wrap;
+  }
+  /* nav > * {
+      border-right: 0px solid #000 !important;
+    } */
+
+  .copywriter-box {
+    min-width: 50%;
+  }
+  .web-developer-box {
+    min-width: 49%;
+    border-right: 0px solid #000;
+  }
+  .web-designer {
+    min-width: 50%;
+  }
+  .photo-editor-box {
+    min-width: 49%;
+  }
+
+  .video-editor-box {
+    min-width: 50%;
+  }
+  .music-producer-box {
+    min-width: 49%;
+    border-right: 0px solid #000;
+  }
+}
+
+/* --------------------------------------
+ABOUT */
+.a-s-box {
+  display: flex;
+  justify-content: center;
+}
+
+.about-skills-content {
+  max-width: 700px;
+}
+
+.about-header {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #000;
+}
+
+.elion-img-box {
+  display: flex;
+  justify-content: center;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+.img-circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: url(/ee.png);
+  background-size: cover;
+  margin: 25px 0 25px 0;
+}
+
+.elion-img {
+  width: 200px;
+}
+
+.description-box {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+}
+
+.description {
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+  font-family: "rbt";
+  font-size: 17px;
+  padding: 15px;
+}
+
+.skills-header {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #000;
+  border-top: 1px solid #000;
+}
+
+.skills-elion {
+  font-size: 18px;
+}
+
+.services-box {
+  display: flex;
+  justify-content: center;
+}
+
+#service-list {
+  width: 700px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#service-list-cc {
+  width: 700px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.copywriter-service {
+  font-family: "rb";
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+#plus-icn {
+  width: 20px;
+  margin-right: 10px;
+}
+
+#copywriter-description {
+  /* position: absolute; */
+  width: 700px;
+  padding: 10px;
+  top: 40px;
+
+  display: none;
+  pointer-events: none;
+  transition: all 0.5s ease-in-out;
+}
+
+#copywriter-description.active {
+  display: block;
+  transition: all 0.5s ease-in-out;
+}
+
+/* 
+.cd-text {
+  transition: all 0.5s ease-in-out;
+} */
+
+#cp-con-box {
+  border-right: 1px solid #000;
+  border-left: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+/* #cp-con-box.active {
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+} */
+
+.cd-text {
+  font-family: "r";
+  font-size: 14px;
+}
+
+.services-container {
+  max-width: 700px;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.checkmark-icn {
+  width: 20px;
+  margin-right: 10px;
+}
+
+#minus-icn {
+  width: 20px;
+  margin-right: 10px;
+  display: none;
+}
+
+.show-minus {
+  display: block !important;
+}
+
+.hide-plus {
+  display: none;
+}
+
+.contact-footer {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-elion {
+  font-size: 18px;
+}
+
+.no-border {
+  border-bottom: 0px solid #000 !important;
+  border-right: 1px solid #000;
+}
+.border {
+  border-bottom: 1px solid #000 !important;
+}
+
+#cp-con-box-l {
+  border-right: 1px solid #000;
+  border-left: 1px solid #000;
+}
+
+.footer-details {
+  background-color: #aaa;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #000;
+}
+
+.blank-space {
+  background-color: #aaa;
+  height: 40px;
+  border-bottom: 1px solid #000;
+  font-family: "r";
+  font-size: 14px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.location-icn {
+  width: 20px;
+  margin-right: 6px;
+}
+
+.location-details {
+  font-family: "r";
+}
+
+.email {
+  display: flex;
+  margin-top: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.mail-icn {
+  width: 25px;
+  margin-right: 10px;
+}
+
+.phone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.phone-icn {
+  width: 25px;
+  margin-right: 10px;
+}
+
+.contact-headline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "rb";
+  background-color: #aaa;
+  height: 40px;
+  font-size: 20px;
+  border-bottom: 1px solid #000;
+}
+
+@media only screen and (max-width: 700px) {
+  #cp-con-box {
+    width: 100%;
+    border-right: 0px solid #000;
+    border-left: 0px solid #000;
+  }
+
+  #service-list {
+    width: 100%;
+  }
+  #service-list-cc {
+    width: 100%;
+  }
+
+  #cp-con-box-l {
+    width: 100%;
+    border-right: 0px solid #000;
+    border-left: 0px solid #000;
+  }
+
+  .elion-img-box {
+    border-left: 0px solid #000;
+    border-right: 0px solid #000;
+  }
+  .description {
+    border-left: 0px solid #000;
+    border-right: 0px solid #000;
+  }
+  #copywriter-description {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .location-details {
+    font-size: 15px !important;
+  }
+
+  .location-icn {
+    width: 15px !important;
+  }
+
+  .email {
+    font-size: 15px !important;
+  }
+  .mail-icn {
+    width: 20px !important;
+  }
+
+  .phone {
+    font-size: 15px !important;
+  }
+
+  .phone-icn {
+    width: 20px !important;
+  }
+
+  .blank-space {
+    font-size: 12px !important;
+    padding: 10px 0 10px 0 !important;
+  }
+
+  .footer-details {
+    padding: 10px 0 10px 0 !important;
+    height: 120px !important;
+  }
+
+  .contact-headline {
+    padding: 10px 0 10px 0 !important;
+  }
+  .blank-space {
+    padding: 10px 0 10px 10px !important;
+  }
+
+  /* .description {
+    font-size: 16px;
+  } */
+}
